@@ -331,42 +331,63 @@ button, input, textarea, select { font: inherit; }
 .visual-card {
   position: relative;
   min-height: 170px;
-  border-radius: 24px;
+  border-radius: 28px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  box-shadow: var(--soft-shadow);
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 22px 40px rgba(22, 28, 42, 0.14);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: end;
-  padding: 1rem;
+  padding: 1.1rem 1.2rem 1rem;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visual-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 48px rgba(22, 28, 42, 0.18);
 }
 
 .visual-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 21, 31, 0.08), rgba(15, 21, 31, 0.58));
+  background: linear-gradient(180deg, rgba(20, 24, 36, 0.05), rgba(20, 24, 36, 0.72));
+}
+
+.visual-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0));
+  mix-blend-mode: screen;
 }
 
 .visual-card span {
   position: relative;
   z-index: 1;
   color: #fff;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  font-size: clamp(1.15rem, 2vw, 1.9rem);
+  line-height: 1;
+  text-shadow: 0 8px 22px rgba(0,0,0,0.28);
 }
 
 .visual-one {
   background-image: url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=1200&q=80');
+  background-position: center center;
 }
 
 .visual-two {
   background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');
+  background-position: center 52%;
 }
 
 .visual-three {
   background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80');
+  background-position: center center;
 }
 
 .about-copy,
