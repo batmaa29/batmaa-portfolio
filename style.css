@@ -362,11 +362,11 @@ button, input, textarea, select { font: inherit; }
 }
 
 .visual-two {
-  background-image: url('assets/project-lukohub.png');
+  background-image: url('assets/project-mobile.png');
 }
 
 .visual-three {
-  background-image: url('assets/about-teamwork.png');
+  background-image: url('assets/project-pokemon.png');
 }
 
 .about-copy,
