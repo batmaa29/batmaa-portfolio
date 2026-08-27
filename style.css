@@ -358,15 +358,15 @@ button, input, textarea, select { font: inherit; }
 }
 
 .visual-one {
-  background-image: url('assets/about-cybersecurity.png');
+  background-image: url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=1200&q=80');
 }
 
 .visual-two {
-  background-image: url('assets/project-mobile.png');
+  background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');
 }
 
 .visual-three {
-  background-image: url('assets/project-pokemon.png');
+  background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80');
 }
 
 .about-copy,
